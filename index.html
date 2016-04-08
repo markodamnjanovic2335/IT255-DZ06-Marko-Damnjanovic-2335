@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){ $.ajax({
+url: 'http://jsonplaceholder.typicode.com/posts/10',
+type: "GET",
+success: function(podatak){
+
+var prom = podatak;
+$("#userId").append("ID_Korsnika: "+prom.userId);
+$("#id").append("ID: " + prom.id);
+$("#title").append("Naslov: " + prom.title);
+$("#body").append("Tekst: " + prom.body);
+}
+});
+});
+</script>
+</head>
+<body bgcolor="#B3F8EE">
+
+<h3 id="userId"></h3>
+<h3 id="id"></h3>
+<h3 id="title"></h3>
+<h3 id="body" ></h3>
+
+</body>
+</html>

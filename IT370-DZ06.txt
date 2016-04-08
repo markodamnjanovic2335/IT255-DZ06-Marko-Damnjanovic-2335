@@ -1,0 +1,6 @@
+Domaæi 6 IT255
+
+Veb sevis koji sam korstio link:
+Vhttp://jsonplaceholder.typicode.com/posts/10
+
+Slika se kako to izgleda može se videti u folderu
