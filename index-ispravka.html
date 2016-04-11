@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){ $.ajax({
+url: 'http://date.jsontest.com/',
+type: "GET",
+success: function(podatak){
+
+var prom = podatak;
+$("#Vreme").append("Vreme: "+prom.time);
+$("#milisekundi").append("Milisekunde: " + prom.milliseconds_since_epoch);
+$("#datum").append("Datum: " + prom.date);
+
+}
+});
+});
+</script>
+</head>
+<body bgcolor="#B3F8EE">
+
+<h3 id="Vreme"></h3>
+<h3 id="milisekundi"></h3>
+<h3 id="datum"></h3>
+
+
+</body>
+</html>
